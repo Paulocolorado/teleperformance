@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #494949;
+}
+header{
+    padding: 1%;
+    margin: 0;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 7px;
+    text-shadow: -0.02em 0.05em #60655a;
+    font-weight: bolder;
+    color: #70b231;
+    font-size: 2rem;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #333333;
+    justify-content: center;
+}
+nav a{
+    color: #e0dcbd;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-right: 1px solid slategrey;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    background-color: #f4f4f4;
+    flex: 1;
+}
+aside{
+    flex: 7%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0 1px 5px #c4baba;
+    height: 100%;
+    padding-bottom: 2%;
+}
+aside > div {
+    border-bottom: dotted;
+    border-bottom-color: #c8c8c8;
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: dotted;
+    border-bottom-color: #c8c8c8;
+}
+aside h2{
+    display: flex;
+    justify-content: center;
+    background-color: #e4e5e4;
+    margin: 5%;
+    color: #393838;
+}
+section{
+    flex: 70%;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: slategrey;
+}
+input[type="button"]{
+    background-color: #62a523;
+    color: #ffffff;
+    padding-left: 8%;
+    padding-right: 8%;
+    border-radius: 6%;
+    border: 0;
+    margin-top: 3%;
+}
+input[type="button"]:hover{
+    cursor:pointer;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a{
+    color: #70b231;
+    text-decoration: none;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5%;
+}
+p{
+    word-wrap: break-word;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.news{
+    flex: 70%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 1px 5px #c4baba; 
+    margin-bottom: 3%;  
+}
+.news > h2{
+    display: flex;
+    justify-content: center;
+}
+.redtitle{
+    color: #9c2c36;
+}
+.yellowtitle{
+    color: #d6a34d;
+}
+
+
+@media screen and (max-width: 1100px){
+    nav{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px){
+    nav, .row{
+        flex-direction: column;
+        
+    }
+    aside{
+        margin-right: 0;
+        margin-bottom: 7rem;
+    }
+}
